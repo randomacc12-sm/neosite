@@ -30,7 +30,8 @@ document.getElementById('decline-button').addEventListener('mouseover', function
     declineButton.style.left = x + 'px';
     declineButton.style.top = y + 'px';
 });
+// Switch to the flower site when the "Accept" button is clicked
 document.getElementById('accept-button').addEventListener('click', function() {
-    window.location.href = 'http://localhost:8000/another_site/index-2.html';
-
+    document.getElementById('mail-site').style.display = 'none';
+    document.getElementById('flower-site').style.display = 'block';
 });
